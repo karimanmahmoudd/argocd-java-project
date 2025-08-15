@@ -14,10 +14,11 @@ spec:
         app: app-java
     spec:
       containers:
-      - name: java-app
+      - name: app-java
         image: karimanmahmoud/app-java:v25
         ports:
         - containerPort: 8080
+
 
 
 
