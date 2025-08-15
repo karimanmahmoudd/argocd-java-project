@@ -1,22 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: java-app
+  name: app-java
   namespace: apps
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: java-app
+      app: app-java
   template:
     metadata:
       labels:
-        app: java-app
+        app: app-java
     spec:
       containers:
       - name: java-app
-        image: karimanmahmoud/java-app:25
+        image: karimanmahmoud/app-java:v25
         ports:
         - containerPort: 8080
+
 
 
